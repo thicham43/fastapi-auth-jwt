@@ -4,12 +4,12 @@ from passlib.context import CryptContext
 from .jwt import decode_token
 from .exceptions import login_pswd_exception, credentials_exception
 
-USERS_DB = {"johndoe": {"full_name": "John Doe",
-                        "login": "johndoe",
-                        "password": "$2b$12$LACBh9K4u02C/hCBTFI6ne9KiueyYnBcOjsrD3foj1JYtCybdjsc6",
-                        "email": "johndoe@example.com",
-                        "active": True
-                        }
+USERS_DB = {"demouser": {"full_name": "Demo User",
+                         "login": "demouser",
+                         "password": "$2b$12$LACBh9K4u02C/hCBTFI6ne9KiueyYnBcOjsrD3foj1JYtCybdjsc6",
+                         "email": "demo@user.com",
+                         "active": True
+                         }
             }
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
